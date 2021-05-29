@@ -1,12 +1,13 @@
-@import "src/components/universal-search/styles.scss";
+@import "src/components/universal-search/universal-search";
+
+$bgColor: #bada55;
+.App {
+  text-align: center;
+}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-.App {
-  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -16,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: $bgColor;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
