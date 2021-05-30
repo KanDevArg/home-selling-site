@@ -6,11 +6,11 @@ import UniversalSearch from "./components/universal-search/universal-search";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <UniversalSearch/>
-        <img src={logo} className="App-logo" alt="logo" />
-
-      </header>
+        <header className="App-header">
+            {/*TODO: place universal search component*/}
+            <UniversalSearch/>
+            <img src={logo} className="App-logo" alt="logo" />
+        </header>
     </div>
   );
 }

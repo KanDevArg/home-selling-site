@@ -1,26 +1,26 @@
 import React, { FC, useState, useCallback } from "react";
 const UniversalSearch: FC<{}> = (): JSX.Element => {
-    const [count, setCount] = useState(0);
-    const updateCount = useCallback(
-        (e: React.MouseEvent<HTMLButtonElement>): void => {
-            switch (e.currentTarget.innerText) {
-                case "-":
-                    setCount(count - 1);
-                    break;
-                case "+":
-                default:
-                    setCount(count + 1);
-                    break;
+    const [searchStatus, setSearchStatus] = useState("About to search");
+    const goSearch = useCallback(
+        (e: React.KeyboardEvent<HTMLInputElement>): void => {
+            if (e.key === "Enter") {
+                setSearchStatus("searching");
+                return;
             }
+            setSearchStatus("About to search")
         },
-        [count]
+        [searchStatus]
     );
     return (
-        <div className="u-search-container">
-            <h2>Universal Search</h2>
-            <h1>{count}</h1>
-            <button onClick={updateCount}>+</button>
-            <button onClick={updateCount}>-</button>
+        <div className="u-search">
+            <div className="input-box">
+                <input className="input-box-input"
+                       placeholder="Universal search"
+                       type="text"
+                       onKeyPress={goSearch}
+                />
+                <h1>{searchStatus}</h1>
+            </div>
         </div>
     );
 };

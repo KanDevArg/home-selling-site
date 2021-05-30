@@ -1,5 +1,22 @@
-$bgColorUS: lightgreen;
+$bgColorUS: darkgray;
+$bgColorInputBox: lightgreen;
 
-.u-search-container {
+.u-search {
+  width: 90%;
   background-color: $bgColorUS;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0px;
+}
+.input-box {
+  padding: 10px;
+  width: 100%;
+  background-color:$bgColorInputBox;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.input-box-input {
+  width: 100%;
 }
