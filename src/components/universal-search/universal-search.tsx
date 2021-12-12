@@ -14,6 +14,7 @@ const UniversalSearch: FC<{}> = (): JSX.Element => {
     return (
         <div className="u-search">
             <div className="input-box">
+                <label>Universal Search</label>
                 <input className="input-box-input"
                        placeholder="Universal search"
                        type="text"

@@ -7,7 +7,6 @@ function App() {
   return (
     <div className="App">
         <header className="App-header">
-            {/*TODO: place universal search component*/}
             <UniversalSearch/>
             <img src={logo} className="App-logo" alt="logo" />
         </header>
