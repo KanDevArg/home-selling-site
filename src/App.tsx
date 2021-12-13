@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import UniversalSearch from "./components/universal-search/universal-search";
+import Dashboard from "./components/dashboard/dashboard";
 
 function App() {
   return (
     <div className="App">
         <header className="App-header">
-            <UniversalSearch/>
+            <Dashboard/>
             <img src={logo} className="App-logo" alt="logo" />
         </header>
     </div>
